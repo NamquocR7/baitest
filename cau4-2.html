@@ -14,18 +14,29 @@
     </tr>
     <tr>
       <td>
-        <input type="button" onclick = andi() value="kiem tra">
+        <input type="button" onclick = cv() value="cv">
+      </td>
+      <td>
+        <input type="button" onclick = dt() value="dt">
       </td>
     </tr>
+    <tr>
+      <td id></td>
+    </tr>
+
   </table>
-  <p id="cv"></p>
-  <p id="dt>"></p>
+  <p id="cv"></p> <br>
+
 </body>
 <script>
-  function andi(){
-  let a= +document.getElementById('nhapa').value;
-  document.getElementById('cv').innerHTML=("chuvi la:"+""+(a+a))
-  document.getElementById('dt').innerHTML=("dientich la:"+""+(a*a))
+  function cv() {
+    let a = +document.getElementById('nhapa').value;
+    document.getElementById('cv').innerHTML = ("chuvi la:" + "" + (a * 4))
+  }
+
+    function dt(){
+      let a= +document.getElementById('nhapa').value;
+  document.getElementById('dt').innerHTML=("dientich la:" + "" + (a * a))
   }
 </script>
 </html>
