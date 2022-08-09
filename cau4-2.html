@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <td>
+        Nhapvaoa: <input type="text" id="nhapa">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" onclick = andi() value="kiem tra">
+      </td>
+    </tr>
+  </table>
+  <p id="cv"></p>
+  <p id="dt>"></p>
+</body>
+<script>
+  function andi(){
+  let a= +document.getElementById('nhapa').value;
+  document.getElementById('cv').innerHTML=("chuvi la:"+""+(a+a))
+  document.getElementById('dt').innerHTML=("dientich la:"+""+(a*a))
+  }
+</script>
+</html>

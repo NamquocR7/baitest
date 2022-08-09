@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <td>
+        Nhapvaoa: <input type="text" id="nhapa">
+      </td>
+      <td>
+        Nhapvaob:<input type="text" id="nhapb">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" onclick = andi() value="kiem tra">
+      </td>
+    </tr>
+
+  </table>
+</form>
+<tr>
+  <p id="kq"></p>
+</tr>
+
+</body>
+<script>
+  function andi(){
+  let a= +document.getElementById('nhapa').value;
+  let b= +document.getElementById('nhapb').value;
+  let tich = a*a
+  document.write(tich);
+    let th = a**b
+    document.write(th);
+
+
+  }
+</script>
+</html>
